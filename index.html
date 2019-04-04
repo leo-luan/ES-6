@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Engenharia de Software - Aula06</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>
+						Universidade do Estado de Mato Grosso <br />
+						<em>Campus</em> Cáceres <br />
+						Faculdade de Ciências Exatas <br/>
+						Bacharelado em Ciência da Computação
+					</p>
+					<br />
+					<h3>Engenharia de Software I</h3>
+					<h4>Desenvolvimento ágil de software</h4>
+					<br />
+					<p>
+						Leonardo Luan Martins da Silva <br />
+						04 de abril de 2019
+					</p>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3>Objetivos</h3>
+					<ul>
+						<li style="margin-bottom: 50px">Compreender a lógica dos métodos ágeis, o manifesto ágil, e as diferenças entre desenvolvimento ágil e dirigido a planos;</li>
+						<li style="margin-bottom: 50px">Conhecer o Extreme Programming;</li>
+						<li>Conhecer o Scrum.</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3>Contextualização</h3>
+
+					<section>
+						<ul>
+							<li style="margin-bottom: 50px">Atualmente, as empresas atuam em um ambiente de constantes mudanças;</li>
+							<li style="margin-bottom: 50px">Softwares precisam ser desenvolvidos rapidamente para atenderem às mudanças e novas oportunidades do mercado;</li>
+							<li>Com mudanças constantes, processos que seguem um modelo dirigido à planos atrasam, pois precisam replanejar todo o processo quando uma mudança nos requisitos acontece;</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li style="margin-bottom: 50px">Em 1980, a IBM introduziu o modelo incremental, com intenção de entregar software com maior frequência;</li>
+							<li>No fim da década de 1990, a idéia decolou com a criação dos métodos: Desenvolvimento de Sistemas Dinâmicos (DSMD, 1997), Scrum (2001) e XP (1999).</li>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3>Métodos ágeis</h3>
+
+					<section>
+						<ul>
+							<li>Na década de 1980 havia uma visão generalizada de que a melhor maneira para conseguir o melhor software era por meio de um planejamento cuidadoso do projeto, qualidade da segurança formalizada, do uso de métodos de análise e projeto e do processo de desenvolvimento de software rigoroso e controlado.</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Tais abordagens dirigidas a planos envolvem um overhead significativo no planejamento, projeto e documentação do sistema. Esse overhead se justifica quando o trabalho de várias equipes de desenvolvimento tem de ser coordenado, quando o sistema é um sistema crítico e quando muitas pessoas diferentes estão envolvidas na manutenção do software durante sua vida.</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li style="margin-bottom: 30px">No entanto, em sistemas pequenos ou médios, esse overhead compromete o desenvolvimento.</li>
+							<li style="margin-bottom: 30px">Como os requisitos do sistema se alteram,  retrabalho é essencial, e, pelo menos em princípio, a especificação e o projeto devem mudar com o programa.</li>
+							<li>Nesse cenário, surgiram os Métodos ágeis, que permitiram que a equipe de desenvolvimento focasse no software em si, e não em sua concepção e documentação.</li>
+						</ul>
+					</section>
+					<section style="font-size: 95%">
+						<ul>
+							<li style="margin-bottom: 30px">A filosofia por trás dos métodos ágeis é refletida no manifesto ágil. Esse manifesto firma valores, como:</li>
+							<ul>
+								<li style="margin-bottom: 30px">Indivíduos e interações do que processos e ferramentas;</li>
+								<li style="margin-bottom: 30px">Software em funcionamento do que documentação abrangente;</li>
+								<li style="margin-bottom: 30px">Colaboração do cliente do que negociação de contrato;</li>
+								<li>Respostas a mudanças do que seguir um plano.</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li style="margin-bottom: 30px">E também propõe alguns princípios:</li>
+							<ul>
+								<li style="margin-bottom: 30px">Envolvimento do cliente;</li>
+								<li style="margin-bottom: 30px">Entrega de valor constante;</li>
+								<li style="margin-bottom: 30px">Pessoas, não processos;</li>
+								<li style="margin-bottom: 30px">Aceitar mudanças;</li>
+								<li>Manter a simplicidade.</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3 style="font-size:95%">Desenvolvimento ágil vs. dirigido a planos</h3>
+
+					<section>
+						<ul>
+							<li style="margin-bottom: 30px">No desenvolvimento ágil o projeto e a implementação são vistos como fundamentais, no entanto, essas etapas podem ser intercaladas ou refeitas durante o desenvolvimento.</li>
+							<li>No desenvolvimento dirigido a planos, as etapas estão encadeadas, de modo que a saída de uma etapa é fundamental para o início da próxima atividade.</li>
+						</ul>
+					</section>
+					<section  data-transition="none">
+						<ul>
+							<li style="margin-bottom: 30px">Para optar por um equilíbrio entre as abordagens, você precisa responder a uma série de questões técnicas, humanas e organizacionais:</li>
+							<ol>
+								<li style="margin-bottom: 30px">É importante ter uma especificação e um projeto muito detalhados antes de passar para a implementação? Se sim, você provavelmente necessita usar uma abordagem dirigida a planos.</li>
+								<li>É realista uma estratégia de entrega incremental em que você entrega o software aos clientes e rapidamente obtém um feedback? Em caso afirmativo, considere o uso de métodos ágeis.</li>
+							</ol>
+						</ul>
+					</section>
+					<section data-transition="none">
+						<ul>
+							<li style="margin-bottom: 30px">Para optar por um equilíbrio entre as abordagens, você precisa responder a uma série de questões técnicas, humanas e organizacionais:</li>
+							<ol start="3">
+								<li>Quão grande é o sistema que está em desenvolvimento? Os métodos ágeis são mais eficazes quando o sistema pode ser desenvolvido com uma pequena equipe colocalizada capaz de se comunicar de maneira informal. Isso pode não ser possível para sistemas de grande porte que exigem equipes de desenvolvimento maiores, nesse caso, uma abordagem dirigida a planos pode ter de ser usada.</li>
+							</ol>
+						</ul>
+					</section>
+					<section data-transition="none">
+						<ul>
+							<li style="margin-bottom: 30px">Para optar por um equilíbrio entre as abordagens, você precisa responder a uma série de questões técnicas, humanas e organizacionais:</li>
+							<ol start="4">
+								<li>Que tipo de sistema está sendo desenvolvido? Sistemas que exigem uma análise profunda antes da imple­ mentação (por exemplo, sistema de tempo real com requisitos de tempo complexos) geralmente demandam um projeto bastante detalhado para atender a essa análise. Nessas circunstâncias, uma abordagem dirigida a planos pode ser a melhor opção.</li>
+							</ol>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3>Extreme Programming</h3>
+
+					<section>
+						<ul>
+							<li>O nome foi XP criado por Beck (2000), pois a abordagem foi desenvolvida para impulsionar práticas reconhecidamente boas, como o desenvolvimento iterativo, a níveis 'extremos'. Por exemplo, em XP, várias novas versões de um sistema podem ser desenvolvidas, integradas e testadas em um único dia por programadores diferentes.</li>
+						</ul>
+					</section>
+
+					<section style="font-size: 90%">
+						<ul>
+							<li style="margin-bottom: 30px">Requisitos são expressos como cenários.</li>
+							<li style="margin-bottom: 30px">Os programadores trabalham em pares (Pair Programming) e desenvol­vem testes para cada tarefa antes de escreverem o código (TDD).</li>
+							<li>Os requisitos não estão especificados como uma lista de funções requeridas do sistema. Pelo con­trário, o cliente do sistema é parte da equipe de desenvolvimento e discute cenários com outros membros da equipe. Juntos, eles desenvolvem um 'cartão de história', englobando as necessidades do cliente.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;font-size: 90%">
+					<h3>Gerenciamento ágil de projetos</h3>
+
+					<section style="font-size: 90%">
+						<ul>
+							<li style="margin-bottom: 30px">O Scrum é um método ágil,  mas seu foco está no gerenciamento do projeto como um todo.</li>
+							<li style="margin-bottom: 30px">Por não fornecer um conjunto de técnicas, o Scrum é dito ser um framework de desenvolvimento.</li>
+							<li style="margin-bottom: 30px">No Scrum, existem três fases:</li>
+							<ul>
+								<li style="margin-bottom: 30px">Planejamento e Arquitetura;</li>
+								<li style="margin-bottom: 30px">Ciclos de Sprints;</li>
+								<li>Documentação e avaliação.</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: center; font-size: 90%">
+					<h3>Exercícios</h3>
+					<br />
+					<h4>1, 2, 3, 4, 5, 8.</h4>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				mouseWheel: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ slideNumber: 'c/t' });
+		</script>
+	</body>
+</html>
